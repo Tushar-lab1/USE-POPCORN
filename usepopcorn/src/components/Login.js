@@ -18,8 +18,8 @@ function LoginSignup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const url = isLogin
-      ? "http://localhost:8000/login"
-      : "http://localhost:8000/signup";
+      ? "https://usepopcorn-server.onrender.com/login"
+      : "https://usepopcorn-server.onrender.com/signup";
 
     const payload = isLogin
       ? { email: formData.email, password: formData.password }

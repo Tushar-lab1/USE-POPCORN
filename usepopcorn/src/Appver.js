@@ -24,7 +24,7 @@ export default function Home() {
   const handleDeleteWatched = async (id) => {
     const userId = localStorage.getItem("userId");
     try {
-      const res = await fetch(`http://localhost:8000/movies/${userId}/${id}`, {
+      const res = await fetch(`https://usepopcorn-server.onrender.com/movies/${userId}/${id}`, {
         method: "DELETE",
       });
       const data = await res.json();

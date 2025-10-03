@@ -12,7 +12,7 @@ export default function WatchedMovieList({
       if (!userId) return;
 
       try {
-        const res = await fetch(`http://localhost:8000/movies/${userId}`);
+        const res = await fetch(`https://usepopcorn-server.onrender.com/movies/${userId}`);
         const data = await res.json();
 
         const detailedMovies = await Promise.all(
